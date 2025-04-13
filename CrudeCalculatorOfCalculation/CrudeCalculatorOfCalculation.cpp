@@ -12,6 +12,7 @@ bool validinput;
 
 int main(void)
 {
+	SetConsoleTitle(L"CrudeCalculatorOfCalculation")
 	Start();
 };
 
