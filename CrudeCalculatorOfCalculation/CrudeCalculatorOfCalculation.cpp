@@ -12,14 +12,14 @@ bool validinput;
 
 int main(void)
 {
-	SetConsoleTitle(L"CrudeCalculatorOfCalculation")
+	SetConsoleTitle(L"CrudeCalculatorOfCalculation");
 	Start();
 };
 
 
 void Start()
 {
-	std::cout << "Welcome to the CrudeCalculatorOfCalculations.\n";
+	std::cout << "Welcome to the CrudeCalculatorOfCalculation.\n";
 	std::cout << "This is version v1.1/2R\n";
 	std::cout << "Created by SudoNotNoted2007\n";
 	std::cout << "\nWhat math would you want to do today? (Type the number and press enter!)\n";
@@ -56,7 +56,10 @@ void Start()
 	else
 	{
 		validinput = false;
-		std::cout << "incorrect input";
+		system("cls");
+		std::cout << "Not a valid input. Try again.\n";
+		Sleep(1200);
+		system("cls");
 		Start();
 	}
 };
