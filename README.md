@@ -6,3 +6,9 @@ The CrudeCalculatorOfCalculation is a current piece of free software made for te
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/9c3afdd0-56ca-4737-a208-3a83e0df7874)
+
+## Roadmap
+- Make program functional
+- Add division (non-float math)
+- Create Linux version (.sh file)
+- GUI version?
