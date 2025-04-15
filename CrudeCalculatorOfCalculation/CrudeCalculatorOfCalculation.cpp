@@ -15,6 +15,7 @@ char Mult2{};
 char Add1{};
 char Add2{};
 std::string mathinterpreter{};
+char additiontestvalue;
 bool validinput;
 
 int main(void)		//probably insures no return value?		never mind main doesn't need to return i think?
@@ -33,7 +34,7 @@ void Start()
 	Add2 = 0;
 	Mult1 = 0;
 	Mult2 = 0;
-
+	SetConsoleTitle(L"CurdeCalculatorOfCalculation");
 	std::cout << "Welcome to the CrudeCalculatorOfCalculation.\n";
 	std::cout << "This is an UNSTABLE release.\n";
 	std::cout << "Created by SudoNotNoted2007\n";
@@ -84,11 +85,14 @@ void Start()
 };
 void Addition()
 	{
+	SetConsoleTitle(L"CrudeAddition");
 		system("cls");
 		std::cout << "Type in your first addition value:\n";
 		std::cin >> Add1;
 		std::cout << "Your second addition value:\n";
 		std::cin >> Add2;
+		additiontestvalue = std::string(1, Add1) + "+" + std::string(1, Add2);
+		SetConsoleTitleW(additiontestvalue);
 		std::cout << "\nYour answer (probably) is: " << Add1 + Add2 << std::endl;
 		std::cout << "\nIf there was an error, please report this issue to the GitHub, or help contribute!\n";
 		system("pause");
