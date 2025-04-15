@@ -16,7 +16,7 @@ int Add2{};
 std::string mathinterpreter{};
 bool validinput;
 
-int main(void)
+int main(void)		//probably insures no return value?
 {
 	SetConsoleTitle(L"CrudeCalculatorOfCalculation");
 	Start();
@@ -67,6 +67,7 @@ void Start()
 		validinput = false;
 		system("cls");
 		std::cout << "Not a valid input. Try again.\n";
+		std::cout << "Double-check what you typed, and try again.\n";
 		Sleep(1200);
 		system("cls");
 		Start();
@@ -114,7 +115,7 @@ void Multiply()
 		std::cin >> Mult1;
 		std::cout << "Your second multiplication value:\n";
 		std::cin >> Mult2;
-		std::cout << "\nYour answer is: " << Mult1 * Mult2 << std::endl;
+		std::cout << "\nYour answer (probably) is: " << Mult1 * Mult2 << std::endl;
 		std::cout << "\nIf there was an error, please report this issue to the GitHub, or help contribute!\n";
 		system("pause");
 		std::cout << "\nReturning to start...";
@@ -123,3 +124,7 @@ void Multiply()
 		Sleep(200);
 		Start();
 	};
+void test()
+{
+	std::cout << "math thing that goes here later";
+};
