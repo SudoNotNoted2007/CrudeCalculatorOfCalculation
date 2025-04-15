@@ -91,8 +91,10 @@ void Addition()
 		std::cin >> Add1;
 		std::cout << "Your second addition value:\n";
 		std::cin >> Add2;
-		additiontestvalue = std::string(1, Add1) + "+" + std::string(1, Add2);
-		SetConsoleTitleW(additiontestvalue);
+		//additiontestvalue = std::string(1, Add1) + "+" + std::string(1, Add2);
+		//SetConsoleTitleW(additiontestvalue);
+
+		//TODO: remove this garbage in favor of ANSI escape codes
 		std::cout << "\nYour answer (probably) is: " << Add1 + Add2 << std::endl;
 		std::cout << "\nIf there was an error, please report this issue to the GitHub, or help contribute!\n";
 		system("pause");
