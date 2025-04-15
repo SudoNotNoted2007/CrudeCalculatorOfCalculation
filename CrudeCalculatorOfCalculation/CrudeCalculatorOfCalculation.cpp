@@ -7,6 +7,7 @@ void Subtraction();
 void Addition();
 void Multiply();		//forward declaration hell
 void Start();
+void test();
 int Sub1{};
 int Sub2{};
 int Mult1{};
@@ -34,11 +35,12 @@ void Start()
 	Mult2 = 0;
 
 	std::cout << "Welcome to the CrudeCalculatorOfCalculation.\n";
-	std::cout << "This is version v1.1/2R\n";
+	std::cout << "This is an UNSTABLE release.\n";
 	std::cout << "Created by SudoNotNoted2007\n";
 	std::cout << "\n(Note: Don't try big numbers right now. The program cannot handle them due to a overflow error.)\n";
 	std::cout << "\nWhat math would you want to do today? (Type the number and press enter!)\n";
 	std::cout << "\nType 1 for Addition\nType 2 for Subtraction\nType 3 for Multiplication\nDivision is currently unavailable (due to floating point math working differently.)\n";
+	std::cout << "\nType E (capitalized) for a list of errors encountered.\n";
 	std::cin >> mathinterpreter;
 	if (mathinterpreter == "1")
 	{
@@ -54,6 +56,11 @@ void Start()
 	{
 		validinput = true;
 		Multiply();
+	}
+	else if (mathinterpreter == "E")
+	{
+		validinput = true;
+		test();
 	}
 	//else if (mathinterpreter == "4")
 	//{
@@ -126,5 +133,9 @@ void Multiply()
 	};
 void test()
 {
-	std::cout << "math thing that goes here later";
+	system("cls");
+	std::cout << "1. Certain types of invalid inputs sometimes get into a \"Not a valid input. Try again.\" loop.\n";
+	system("pause");
+	system("cls");
+	Start();
 };
