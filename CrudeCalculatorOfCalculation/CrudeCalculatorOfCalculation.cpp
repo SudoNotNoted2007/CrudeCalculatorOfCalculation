@@ -8,16 +8,16 @@ void Addition();
 void Multiply();		//forward declaration hell
 void Start();
 void test();
-int Sub1{};
-int Sub2{};
-int Mult1{};
-int Mult2{};
-int Add1{};
-int Add2{};
+char Sub1{};
+char Sub2{};
+char Mult1{};
+char Mult2{};
+char Add1{};
+char Add2{};
 std::string mathinterpreter{};
 bool validinput;
 
-int main(void)		//probably insures no return value?
+int main(void)		//probably insures no return value?		never mind main doesn't need to return i think?
 {
 	SetConsoleTitle(L"CrudeCalculatorOfCalculation");
 	Start();
